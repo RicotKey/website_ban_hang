@@ -1,0 +1,24 @@
+﻿@model ShopAcc.Models.User
+
+@{
+    ViewBag.Title = "DetailUser";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>THÔNG TIN TÀI KHOẢN</h2>
+
+<h2 class="text-center" style="font-weight:600;margin-bottom:30px; color:orange;">@Html.DisplayFor(model => model.tenhienthi)</h2>
+<div style="text-align:center;"class="col-sm-12 col=md-12" >
+    <div class="thumbnail">
+        <img src="@Html.DisplayFor(model=>model.anhdaidien)" height="250" width="250" alt="thumbnail">
+    </div>
+    <div class="caption">
+        <p> <strong>Tên đăng nhập: </strong>@Html.DisplayFor(model => model.tendn)</p>
+        <p> <strong>Email:</strong> @Html.DisplayFor(model => model.email)</p>
+        <p><strong>Số điện thoại:</strong> @Html.DisplayFor(model => model.sdt)</p>
+    </div>
+</div>
+
+<div class="text-center">
+    <a class="btn btn-default btn btn-google" href="@Url.Action("TTUser")">Trở Về</a>
+</div>

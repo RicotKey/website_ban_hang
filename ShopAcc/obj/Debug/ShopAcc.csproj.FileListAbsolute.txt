@@ -1,0 +1,432 @@
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\ShopAcc.dll.config
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\ShopAcc.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\ShopAcc.pdb
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\csc.exe
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\csc.exe.config
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\csc.rsp
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\csi.exe
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\csi.exe.config
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\csi.rsp
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.AppContext.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Console.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.IO.Compression.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Net.Http.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.ValueTuple.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\vbc.exe
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\vbc.exe.config
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\vbc.rsp
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\Antlr3.Runtime.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\Newtonsoft.Json.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.Helpers.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.Mvc.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.Optimization.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.Razor.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.WebPages.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\WebGrease.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.Helpers.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.Mvc.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.Optimization.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.Razor.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.WebPages.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\Newtonsoft.Json.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\Antlr3.Runtime.pdb
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.CoreCompileInputs.cache
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\obj\Debug\ShopAcc.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\obj\Debug\ShopAcc.pdb
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\EntityFramework.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\EntityFramework.SqlServer.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\EntityFramework.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\EntityFramework.SqlServer.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\PagedList.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\PagedList.Mvc.dll
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\PagedList.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\bin\PagedList.Mvc.xml
+C:\Users\Tran Huu Quang\Desktop\LapTrinhWeb\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.AssemblyReference.cache
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\ShopAcc.dll.config
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\ShopAcc.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\ShopAcc.pdb
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\csc.exe
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\csc.exe.config
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\csc.rsp
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\csi.exe
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\csi.exe.config
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\csi.rsp
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.AppContext.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Console.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.IO.Compression.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Net.Http.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.ValueTuple.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\vbc.exe
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\vbc.exe.config
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\vbc.rsp
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\Antlr3.Runtime.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\EntityFramework.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\EntityFramework.SqlServer.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\Newtonsoft.Json.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\PagedList.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\PagedList.Mvc.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.Helpers.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.Mvc.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.Optimization.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.Razor.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\WebGrease.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\EntityFramework.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\EntityFramework.SqlServer.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\PagedList.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\PagedList.Mvc.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.Helpers.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.Mvc.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.Optimization.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.Razor.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\Newtonsoft.Json.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\Antlr3.Runtime.pdb
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.AssemblyReference.cache
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.CoreCompileInputs.cache
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\obj\Debug\ShopAcc.dll
+C:\Users\Tran Huu Quang\Desktop\ShopAcc\ShopAcc\obj\Debug\ShopAcc.pdb
+D:\ShopAcc\ShopAcc\bin\ShopAcc.dll.config
+D:\ShopAcc\ShopAcc\bin\ShopAcc.dll
+D:\ShopAcc\ShopAcc\bin\ShopAcc.pdb
+D:\ShopAcc\ShopAcc\bin\roslyn\csc.exe
+D:\ShopAcc\ShopAcc\bin\roslyn\csc.exe.config
+D:\ShopAcc\ShopAcc\bin\roslyn\csc.rsp
+D:\ShopAcc\ShopAcc\bin\roslyn\csi.exe
+D:\ShopAcc\ShopAcc\bin\roslyn\csi.exe.config
+D:\ShopAcc\ShopAcc\bin\roslyn\csi.rsp
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.AppContext.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Collections.Immutable.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Console.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Globalization.Calendars.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.IO.Compression.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.IO.FileSystem.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Net.Http.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Net.Sockets.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Reflection.Metadata.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.ValueTuple.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XPath.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ShopAcc\ShopAcc\bin\roslyn\vbc.exe
+D:\ShopAcc\ShopAcc\bin\roslyn\vbc.exe.config
+D:\ShopAcc\ShopAcc\bin\roslyn\vbc.rsp
+D:\ShopAcc\ShopAcc\bin\roslyn\VBCSCompiler.exe
+D:\ShopAcc\ShopAcc\bin\roslyn\VBCSCompiler.exe.config
+D:\ShopAcc\ShopAcc\bin\Antlr3.Runtime.dll
+D:\ShopAcc\ShopAcc\bin\EntityFramework.dll
+D:\ShopAcc\ShopAcc\bin\EntityFramework.SqlServer.dll
+D:\ShopAcc\ShopAcc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ShopAcc\ShopAcc\bin\Microsoft.Web.Infrastructure.dll
+D:\ShopAcc\ShopAcc\bin\Newtonsoft.Json.dll
+D:\ShopAcc\ShopAcc\bin\PagedList.dll
+D:\ShopAcc\ShopAcc\bin\PagedList.Mvc.dll
+D:\ShopAcc\ShopAcc\bin\System.Web.Helpers.dll
+D:\ShopAcc\ShopAcc\bin\System.Web.Mvc.dll
+D:\ShopAcc\ShopAcc\bin\System.Web.Optimization.dll
+D:\ShopAcc\ShopAcc\bin\System.Web.Razor.dll
+D:\ShopAcc\ShopAcc\bin\System.Web.WebPages.Deployment.dll
+D:\ShopAcc\ShopAcc\bin\System.Web.WebPages.dll
+D:\ShopAcc\ShopAcc\bin\System.Web.WebPages.Razor.dll
+D:\ShopAcc\ShopAcc\bin\WebGrease.dll
+D:\ShopAcc\ShopAcc\bin\EntityFramework.xml
+D:\ShopAcc\ShopAcc\bin\EntityFramework.SqlServer.xml
+D:\ShopAcc\ShopAcc\bin\PagedList.xml
+D:\ShopAcc\ShopAcc\bin\PagedList.Mvc.xml
+D:\ShopAcc\ShopAcc\bin\System.Web.Helpers.xml
+D:\ShopAcc\ShopAcc\bin\System.Web.Mvc.xml
+D:\ShopAcc\ShopAcc\bin\System.Web.Optimization.xml
+D:\ShopAcc\ShopAcc\bin\System.Web.Razor.xml
+D:\ShopAcc\ShopAcc\bin\System.Web.WebPages.xml
+D:\ShopAcc\ShopAcc\bin\System.Web.WebPages.Deployment.xml
+D:\ShopAcc\ShopAcc\bin\System.Web.WebPages.Razor.xml
+D:\ShopAcc\ShopAcc\bin\Newtonsoft.Json.xml
+D:\ShopAcc\ShopAcc\bin\Antlr3.Runtime.pdb
+D:\ShopAcc\ShopAcc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.CoreCompileInputs.cache
+D:\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.CopyComplete
+D:\ShopAcc\ShopAcc\obj\Debug\ShopAcc.dll
+D:\ShopAcc\ShopAcc\obj\Debug\ShopAcc.pdb
+D:\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.AssemblyReference.cache
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\ShopAcc.dll.config
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\ShopAcc.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\ShopAcc.pdb
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\csc.exe
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\csc.exe.config
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\csc.rsp
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\csi.exe
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\csi.exe.config
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\csi.rsp
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.AppContext.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Console.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Net.Http.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\vbc.exe
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\vbc.exe.config
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\vbc.rsp
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\Antlr3.Runtime.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\EntityFramework.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\EntityFramework.SqlServer.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\Newtonsoft.Json.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\PagedList.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\PagedList.Mvc.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.Helpers.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.Mvc.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.Optimization.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.Razor.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\WebGrease.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\EntityFramework.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\EntityFramework.SqlServer.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\PagedList.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\PagedList.Mvc.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.Helpers.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.Mvc.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.Optimization.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.Razor.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\Newtonsoft.Json.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\Antlr3.Runtime.pdb
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.CoreCompileInputs.cache
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.CopyComplete
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\obj\Debug\ShopAcc.dll
+C:\Users\tranp\Desktop\ShopAcc\ShopAcc\obj\Debug\ShopAcc.pdb
+C:\C#\ShopAcc\ShopAcc\bin\ShopAcc.dll.config
+C:\C#\ShopAcc\ShopAcc\bin\ShopAcc.dll
+C:\C#\ShopAcc\ShopAcc\bin\ShopAcc.pdb
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\csc.exe
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\csc.exe.config
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\csc.rsp
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\csi.exe
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\csi.exe.config
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\csi.rsp
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Managed.Core.targets
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.AppContext.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Collections.Immutable.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Console.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Globalization.Calendars.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.IO.Compression.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.IO.FileSystem.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Net.Http.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Net.Sockets.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Reflection.Metadata.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.ValueTuple.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XmlDocument.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XPath.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\vbc.exe
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\vbc.exe.config
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\vbc.rsp
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\VBCSCompiler.exe
+C:\C#\ShopAcc\ShopAcc\bin\roslyn\VBCSCompiler.exe.config
+C:\C#\ShopAcc\ShopAcc\bin\Antlr3.Runtime.dll
+C:\C#\ShopAcc\ShopAcc\bin\EntityFramework.dll
+C:\C#\ShopAcc\ShopAcc\bin\EntityFramework.SqlServer.dll
+C:\C#\ShopAcc\ShopAcc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\C#\ShopAcc\ShopAcc\bin\Microsoft.Web.Infrastructure.dll
+C:\C#\ShopAcc\ShopAcc\bin\Newtonsoft.Json.dll
+C:\C#\ShopAcc\ShopAcc\bin\PagedList.dll
+C:\C#\ShopAcc\ShopAcc\bin\PagedList.Mvc.dll
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.Helpers.dll
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.Mvc.dll
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.Optimization.dll
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.Razor.dll
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.WebPages.Deployment.dll
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.WebPages.dll
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.WebPages.Razor.dll
+C:\C#\ShopAcc\ShopAcc\bin\WebGrease.dll
+C:\C#\ShopAcc\ShopAcc\bin\EntityFramework.xml
+C:\C#\ShopAcc\ShopAcc\bin\EntityFramework.SqlServer.xml
+C:\C#\ShopAcc\ShopAcc\bin\PagedList.xml
+C:\C#\ShopAcc\ShopAcc\bin\PagedList.Mvc.xml
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.Helpers.xml
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.Mvc.xml
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.Optimization.xml
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.Razor.xml
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.WebPages.xml
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.WebPages.Deployment.xml
+C:\C#\ShopAcc\ShopAcc\bin\System.Web.WebPages.Razor.xml
+C:\C#\ShopAcc\ShopAcc\bin\Newtonsoft.Json.xml
+C:\C#\ShopAcc\ShopAcc\bin\Antlr3.Runtime.pdb
+C:\C#\ShopAcc\ShopAcc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\C#\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.AssemblyReference.cache
+C:\C#\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.CoreCompileInputs.cache
+C:\C#\ShopAcc\ShopAcc\obj\Debug\ShopAcc.csproj.CopyComplete
+C:\C#\ShopAcc\ShopAcc\obj\Debug\ShopAcc.dll
+C:\C#\ShopAcc\ShopAcc\obj\Debug\ShopAcc.pdb

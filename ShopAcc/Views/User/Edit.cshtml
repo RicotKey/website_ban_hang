@@ -1,0 +1,128 @@
+﻿@model ShopAcc.Models.User
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sửa thông tin user</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.iduser)
+
+    <div class="form-group">
+        <strong class="control-label col-md-2">Tên hiển thị</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.tenhienthi, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.tenhienthi, "", new { @class = "text-danger" })
+        </div>
+        @ViewData["Loi5"]
+    </div>
+
+    <div class="form-group">
+        <strong class="control-label col-md-2">Mật khẩu</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.matkhau, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.matkhau, "", new { @class = "text-danger" })
+        </div>
+        @ViewData["Loi2"]
+    </div>
+
+    <div class="form-group">
+        <strong class="control-label col-md-2">Email</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+        </div>
+        @ViewData["Loi3"]
+    </div>
+
+    <div class="form-group">
+        <strong class="control-label col-md-2">Số điện thoại</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.sdt, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.sdt, "", new { @class = "text-danger" })
+        </div>
+        @ViewData["Loi4"]
+    </div>
+
+
+
+    <div class="form-group">
+        <strong class="control-label col-md-2">Ảnh đại diện</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.anhdaidien, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.anhdaidien, "", new { @class = "text-danger" })
+        </div>
+        <input type="file" name="fileUpload" id="fileUpload" accept="image/*"
+               style="display:none;" />
+        <input type="button" id="btnUpload" value="Chọn" class="btn btn-success" />
+        <img style="background: #dddddd; border-radius: 50%; border: 2px solid #a1a1a1; height: 150px;  width: 150px;" src="@Html.DisplayFor(modelItem => @Model.anhdaidien)" alt="Alternate Text" id="pictureUpload"/>
+        @ViewData["Loi6"]
+
+    </div>
+    @section upload
+        {
+        <script>
+            $(function () {
+                $('#btnUpload').click(function () {
+                    $('#fileUpload').trigger('click');
+                });
+            });
+            $('#fileUpload').change(function () {
+                if (window.FormData !== undefined) {
+                    var fileUpload = $('#fileUpload').get(0);
+                    var files = fileUpload.files;
+                    var formData = new FormData();
+                    formData.append('file', files[0]);
+
+                    $.ajax(
+                        {
+                            type: 'POST',
+                            url: '/User/ProcessUpload',
+                            contentType: false,
+                            processData: false,
+                            data: formData,
+                            success: function (urlImage) {
+
+                                $('#pictureUpload').attr('src', urlImage);
+                                $('#anhdaidien').val(urlImage);
+                            },
+                            error: function (err) {
+                                alert('Error ', err.statusText);
+
+
+
+                            }
+                        });
+                }
+            });
+        </script>
+    }
+
+
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-success" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    <a href="@Url.Action("HomePage","Account")">
+        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+            <i class="bi bi-arrow-left" style="font-size: 15px"></i>
+            <strong style="font-size:14px">Quay lại</strong>
+        </button>
+    </a>
+</div>

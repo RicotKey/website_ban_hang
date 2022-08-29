@@ -1,0 +1,79 @@
+﻿@model ShopAcc.Models.Account
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2>Chi tiết Acc #@Model.id.ToString() </h2>
+<head>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/Content/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <a href="@Url.Action("HomePage", "Account")">
+            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                <i class="bi bi-arrow-left" style="font-size: 15px"></i>
+                <strong style="font-size:14px">Quay lại</strong>
+            </button>
+        </a>
+
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6">
+                        <img class="card-img-top mb-5 mb-md-0" src="@Model.hinh" alt="..." />
+                    </div>
+                    <div class="col-md-6">
+                        @*<div class="small mb-1">SKU: BST-498</div>*@
+                        <h1 class="display-5 fw-bolder">Account Game: @Model.LoaiGame.tengame</h1>
+                        <div class="fs-5 mb-5">
+                            @*<span class="text-decoration-line-through">$45.00</span>*@
+                            <trong style="font-size:23px; color: #626470">Giá: @Model.giaban</span></trong>
+                            <hr class="nav-divider" />
+                            <ul>
+                                <li class="bi bi-caret-right-fill" style="list-style:none ;left:0; font-size:large;">
+                                    <strong>Rank:   </strong> &emsp;&emsp;@Model.rank
+                                    <p> </p>
+                                </li>
+                                <li class="bi bi-caret-right-fill" style="list-style: none;left:0; font-size:large">
+                                    <strong>Tướng:  </strong> &emsp;&ensp;@Model.tuong
+                                    <p> </p>
+                                </li>
+                                <li class="bi bi-caret-right-fill" style="list-style: none;left:0; font-size:large">
+                                    <strong>Skin:   </strong> &emsp;&emsp;&ensp;@Model.trangphuc
+                                    <p> </p>
+                                </li>
+                                <li class="btn btn-warning" style="list-style: none;left:0; font-size:16px; width: 170px">
+                                    <a href="@Url.Action("Media", new { @id = Model.id})" style="text-decoration: none; color:white"><strong>Chi Tiết</strong></a>
+                                </li>
+                                <li style="list-style: none">
+                                    <p></p>
+                                </li>
+                                <li style="list-style: none;left:0">
+                                    <div class="d-flex">
+                                        @*<input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />*@
+                                        <button class="btn btn-outline-dark flex-shrink-0" type="button" style="width: 535px">
+                                            <i class="bi bi-cart-plus-fill" style="font-size: 15px"></i>
+                                            <strong style="font-size:14px"> Thêm vào giỏ hàng</strong>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+</body>
+

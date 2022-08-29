@@ -1,0 +1,161 @@
+﻿@model IEnumerable<ShopAcc.Models.GioHang>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+ }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Cart</title>
+</head>
+<body>
+
+   
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">GIỎ HÀNG CỦA BẠN</h1>
+        </div>
+    </section>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col"> </th>
+                                <th scope="col">Loại game</th>
+                                <th scope="col">Tình trạng</th>
+                                <th scope="col" style="text-align:right">Loại Acc</th>
+                                <th scope="col" class="text-right">Giá</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td><img src="@item.hinh" width="50px"> </td>
+                                    <td>@item.idGame</td>
+                                    @if (item.trangthai == true)
+                                    {
+                                        <td>Còn Hàng</td>
+                                    }
+                                    else
+                                    {
+                                        <td>Đã bán</td>
+                                    }
+                                    <td class="text-right">@item.idLoai</td>
+
+                                    <td class="text-right">@item.giaban</td>
+
+                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                                </tr>
+                            }
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Tổng tiền</td>
+                                <td class="text-right">@ViewBag.Tongtien VND</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Số lượng</td>
+                                <td class="text-right">@ViewBag.Tongsoluong</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Giảm giá</td>
+                                <td class="text-right">0 VND</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Thành tiền</strong></td>
+                                <td class="text-right"><strong>@ViewBag.Tongtien</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            @using ShopAcc.Models
+
+            @{
+                User kh = (User)Session["TaiKhoan"];
+            }
+            <table align="center">
+                @using (Html.BeginForm())
+                {
+
+                    @Html.ValidationSummary(true)
+                    <tr style="height:40px">
+                        <td>
+                            <h2 style="text-align:right"> Thông tin đặt hàng</h2> <br />
+                        </td>
+                    </tr>
+                    <tr style="height:40px">
+
+                        <td>Họ tên khách hàng: </td>
+                        <td style="font-weight:bold">@kh.tenhienthi</td>
+                    </tr>
+                    <tr style="height:40px">
+                        <td>Email: </td>
+                        <td style="font-weight:bold">@kh.email</td>
+                    </tr>
+                    <tr style="height:40px">
+                        <td>Số điện thoại: </td>
+                        <td style="font-weight:bold">@kh.sdt</td>
+                    </tr>
+                    <tr style="height:40px">
+                        <td>Ngày mua: </td>
+                        <td style="font-weight:bold">@DateTime.Now.ToShortDateString()</td>
+                    </tr>
+                    <tr style="height:40px">
+                        <td></td>
+
+                        <td style="font-weight:bold">
+                            @*@Html.ActionLink("Thanh Toán", "Payment")*@
+
+                            <a href="@Url.Action("PaymentMoMo")">
+                                <button class="btn btn-danger flex-shrink-0" type="button" style="width: 300px">
+                                    <i class="bi bi-check-circle" style="font-size: 15px"></i>
+                                    <strong style="font-size:14px">Xác nhận thanh toán</strong>
+                                </button>
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+
+
+                }
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
+

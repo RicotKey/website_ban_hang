@@ -1,0 +1,101 @@
+﻿@model ShopAcc.Models.Account
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Account</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span class="display-label">Tài Khoản: </span>
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.taikhoan)
+        </dd>
+
+        <dt>
+            <span class="display-label">Mật Khẩu: </span>
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.matkhau)
+        </dd>
+
+        <dt>
+            <span class="display-label">Ngày cập nhật: </span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngaycapnhat)
+        </dd>
+
+        <dt>
+            <span class="display-label">Giá bán: </span>
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.giaban)
+        </dd>
+
+        <dt>
+            <span class="display-label">Rank: </span>
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.rank)
+        </dd>
+        <dt>
+            <span class="display-label">Tướng: </span>
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.tuong)
+        </dd>
+
+        <dt>
+            <span class="display-label">Trang Phục: </span>
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.trangphuc)
+        </dd>
+
+        <dd>
+            <img src="@Model.hinh" height="250" width="150" />
+        </dd>
+        <dt>
+            <span class="display-label">Loại Acc: </span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idLoai)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-google" />
+        </div>
+    }
+</div>
+<div class="text-center">
+    <a class="btn btn-default btn btn-google" href="@Url.Action("Index")">Trở Về</a>
+</div>
+

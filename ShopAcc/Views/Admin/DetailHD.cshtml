@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ShopAcc.Models.ChiTietHD>
+@{
+    ViewBag.Title = "DetailHD";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>CHI TIẾT HÓA ĐƠN</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            <strong class="control-label col-md-2">ID Account</strong>
+        </th>
+        <th>
+            <strong class="control-label col-md-2">Giá</strong>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gia)
+            </td>
+        </tr>
+
+    }
+
+    <tr style="font-weight:bold; text-align:left; color:red">
+        <td colspan="2">Số lượng: @ViewBag.Soluong</td>
+    </tr>
+
+</table>
+<div class="text-center">
+    <a class="btn btn-default btn btn-google" href="@Url.Action("TTHD")">Trở Về</a>
+</div>

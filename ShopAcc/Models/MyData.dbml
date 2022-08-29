@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ShopAcc" Class="MyDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=MSI\LOCAL;Initial Catalog=ShopAcc;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ShopAccConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Account" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idGame" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="taikhoan" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="matkhau" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="trangthai" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ngaycapnhat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="giaban" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="rank" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="tuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="trangphuc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="hinh" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="idLoai" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Media" Member="Medias" ThisKey="id" OtherKey="id" Type="Media" />
+      <Association Name="Account_TruyCap" Member="TruyCaps" ThisKey="id" OtherKey="id" Type="TruyCap" />
+      <Association Name="LoaiAcc_Account" Member="LoaiAcc" ThisKey="idLoai" OtherKey="idLoai" Type="LoaiAcc" IsForeignKey="true" />
+      <Association Name="LoaiGame_Account" Member="LoaiGame" ThisKey="idGame" OtherKey="idGame" Type="LoaiGame" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Admin" Member="Admins">
+    <Type Name="Admin">
+      <Column Name="idAdmin" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tenDangNhap" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="matkhau" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChiTietHD" Member="ChiTietHDs">
+    <Type Name="ChiTietHD">
+      <Column Name="iduser" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maHD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="gia" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Association Name="HoaDon_ChiTietHD" Member="HoaDon" ThisKey="maHD" OtherKey="maHD" Type="HoaDon" IsForeignKey="true" />
+      <Association Name="TruyCap_ChiTietHD" Member="TruyCap" ThisKey="iduser,id" OtherKey="iduser,id" Type="TruyCap" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HoaDon" Member="HoaDons">
+    <Type Name="HoaDon">
+      <Column Name="maHD" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="thanhtoan" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ngaythanhtoan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="tongtien" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Association Name="HoaDon_ChiTietHD" Member="ChiTietHDs" ThisKey="maHD" OtherKey="maHD" Type="ChiTietHD" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoaiAcc" Member="LoaiAccs">
+    <Type Name="LoaiAcc">
+      <Column Name="idLoai" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tenloai" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="LoaiAcc_Account" Member="Accounts" ThisKey="idLoai" OtherKey="idLoai" Type="Account" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoaiGame" Member="LoaiGames">
+    <Type Name="LoaiGame">
+      <Column Name="idGame" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tengame" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="LoaiGame_Account" Member="Accounts" ThisKey="idGame" OtherKey="idGame" Type="Account" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Media" Member="Medias">
+    <Type Name="Media">
+      <Column Name="idMedia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="link_Media" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Media" Member="Account" ThisKey="id" OtherKey="id" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TruyCap" Member="TruyCaps">
+    <Type Name="TruyCap">
+      <Column Name="iduser" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="trangthai" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="TruyCap_ChiTietHD" Member="ChiTietHDs" ThisKey="iduser,id" OtherKey="iduser,id" Type="ChiTietHD" />
+      <Association Name="Account_TruyCap" Member="Account" ThisKey="id" OtherKey="id" Type="Account" IsForeignKey="true" />
+      <Association Name="User_TruyCap" Member="User" ThisKey="iduser" OtherKey="iduser" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="iduser" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tendn" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="matkhau" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(120)" CanBeNull="true" />
+      <Column Name="sdt" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="tenhienthi" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="anhdaidien" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="trangthai" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="User_TruyCap" Member="TruyCaps" ThisKey="iduser" OtherKey="iduser" Type="TruyCap" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ShopAcc.Models.DonHang>
+
+@{
+    ViewBag.Title = "TTHD";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>DANH SÁCH HÓA ĐƠN</h2>
+
+<table class="table">
+    <tr>
+
+        <th>
+            <strong class="control-label col-md-2">Tên user</strong>
+        </th>
+        <th>
+            <strong class="control-label col-md-2">Ngày thanh toán</strong>
+        </th>
+        <th>
+            <strong class="control-label col-md-2">Tổng tiền</strong>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.TenUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayLap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TongTien)
+            </td>
+            <td>
+                @Html.ActionLink("Xem chi tiết", "DetailHD", new { id = item.maHD }, new { @class = "btn btn-success" })
+            </td>
+        </tr>
+
+    }
+
+    <tr style="font-weight:bold; text-align:right; color:red">
+        <td colspan="2">Tổng tiền: @ViewBag.TongTien</td>
+    </tr>
+
+</table>
+<div class="text-center">
+    <a class="btn btn-default btn btn-google" href="@Url.Action("Index1")">Trở Về</a>
+</div>

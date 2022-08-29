@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ShopAcc.Models.User>
+
+@{
+    ViewBag.Title = "TTUser";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>DANH SÁCH NGƯỜI DÙNG</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            <strong class="control-label col-md-2">Tên Đăng Nhập</strong>
+        </th>
+        <th>
+            <strong class="control-label col-md-2">Tên hiển thị</strong>
+        </th>
+        <th>
+            <strong class="control-label col-md-2">Avartar</strong>
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.tendn)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.tenhienthi)
+    </td>
+    <td>
+        <img style="background: #dddddd; border-radius: 50%; border: 2px solid #a1a1a1; height: 150px;  width: 150px;" src="@Html.DisplayFor(modelItem => item.anhdaidien)" alt="Alternate Text" />
+    </td>
+
+    <td>
+        @Html.ActionLink("Xem", "DetailUser", new { id = item.iduser }, new { @class = "btn btn-success" })
+        @Html.ActionLink("Xóa", "DeleteUser", new { id = item.iduser }, new { @class = "btn btn-google" })
+    </td>
+</tr>
+}
+
+</table>
+<div class="text-center">
+    <a class="btn btn-default btn btn-google" href="@Url.Action("Index1")">Trở Về</a>
+</div>

@@ -1,0 +1,94 @@
+﻿@model ShopAcc.Models.Media
+
+@{
+    ViewBag.Title = "Media";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    var acc = Session["Acc"] as ShopAcc.Models.Account;
+
+}
+
+<h2>Thêm Mô Tả</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>Mô tả</h4>
+    
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.id)
+    <div class="form-group">
+        <div class="col-md-10">
+            <strong>Hình</strong>
+            @Html.EditorFor(model => model.link_Media, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.link_Media, "", new { @class = "text-danger" })
+            <input type="file" name="fileUpload" id="fileUpload" accept="image/*"
+                   style="display:none;" />
+            <input type="button" id="btnUpload" value="Chọn" class="btn btn-success" />
+            @ViewData["ErroChon"]
+        </div>
+    </div>
+    @section upload
+ {
+        <script>
+            $(function () {
+                $('#btnUpload').click(function () {
+                    $('#fileUpload').trigger('click');
+                });
+            });
+            $('#fileUpload').change(function () {
+                if (window.FormData !== undefined) {
+                    var fileUpload = $('#fileUpload').get(0);
+                    var files = fileUpload.files;
+                    var formData = new FormData();
+                    formData.append('file', files[0]);
+                    $.ajax(
+                        {
+                            type: 'POST',
+                            url: '/Admin/ProcessUpload',
+                            contentType: false,
+                            processData: false,
+                            data: formData,
+                            success: function (urlImage) {
+                                $('#pictureUpload').attr('src', urlImage);
+                                $('#link_Media').val(urlImage);
+
+                            },
+                            error: function (err) {
+                                alert('Error ', err.statusText);
+                            }
+                        });
+                }
+            });
+        </script>
+    }
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Thêm" class="btn btn-facebook" />
+        </div>
+    </div>
+    <a href="@Url.Action("DetailMedia",new {@id = Convert.ToInt32(acc.id)})">
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" value="Hình chi tiết" class="btn btn-facebook" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <a href="@Url.Action("Index",new {@id = Convert.ToInt32(acc.id)})">
+                    <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                        <i class="bi bi-arrow-left" style="font-size: 15px"></i>
+                        <strong style="font-size:14px">Quay lại</strong>
+                    </button>
+                </a>            </div>
+        </div>
+        
+    </a>
+</div>
+}
+

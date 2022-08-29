@@ -1,0 +1,304 @@
+﻿@using ShopAcc.Models
+@using PagedList.Mvc
+@model PagedList.IPagedList<ShopAcc.Models.Account>
+
+@{
+    Layout = null;
+    var User = Session["TaiKhoan"] as ShopAcc.Models.User;
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>ShopAcc</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="~/Content/stylefooter.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+
+    <link href="~/Content/Style.css" rel="stylesheet" />
+</head>
+<body style="background-color:#e2e5ec">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            @*<a class="navbar-brand" href="#!">ShopAcc</a>*@
+            <img src="~/Content/images/LogoShop.jpg" width="120px" height="60px" alt="Logo Shop" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://localhost:44355/Account/HomePage#!">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://localhost:44355/Home/Contact">Liên hệ</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tựa game</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="@Url.Action("LMHT", "Game")">Liên Minh Huyền Thoại</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="@Url.Action("TocChien", "Game")">Tốc Chiến</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="@Url.Action("LQM", "Game")">Liên Quân Mobile</a></li>
+                        </ul>
+                    </li>
+                    @if (User != null)
+
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("GioHang", "Cart")">
+                                <i class="bi-cart-fill me-1"></i>
+                                Giỏ hàng
+                                <span class="badge bg-dark text-white ms-1 rounded-pill">@ViewBag.Tongsoluong</span>
+                            </a>
+                        </li>
+                    }
+                    else
+                    {
+                        //<li class="nav-item"><a class="nav-link" href="#!">Xin chào: @User.tendn</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("DangNhap", "User")">
+                                <i class="bi-cart-fill me-1"></i>
+                                Giỏ hàng
+                                <span class="badge bg-dark text-white ms-1 rounded-pill">@ViewBag.Tongsoluong</span>
+                            </a>
+                        </li>
+                    }
+                </ul>
+
+
+
+                @if (User == null)
+
+                {
+                    <form class="d-flex">
+                        <a href="@Url.Action("DangNhap", "User")">
+                            <button class="btn btn-danger" type="button">
+                                <i class="bi bi-person-circle"></i>
+                                Đăng nhập
+                            </button>
+                        </a>
+                    </form>
+                    @*<li class="nav-item"><a class="nav-link" href="@Url.Action("DangNhap","User")">Đăng nhập</a></li>*@
+                }
+                else
+                {
+
+                    <form class="d-flex">
+                        <a href="@Url.Action("DangXuat", "User")">
+                            <button class="btn btn-danger" type="button">
+                                <i class="bi bi-person-x-fill"></i>
+                                Đăng Xuất
+                            </button>
+                        </a>
+                    </form>
+                    <form class="d-flex">
+                        <a href="@Url.Action("Edit", "User", new { id = @User.iduser })">
+                            <button class="btn btn-outline-primary" type="button">
+                                <i class="bi bi-person-lines-fill"></i>
+                                @User.tendn
+                            </button>
+                        </a>
+                    </form>
+                    
+                    @*<li class="nav-item"><a class="nav-link" href="@Url.Action("DangXuat","User")">Đăng xuất</a></li>*@
+
+                }
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/Content/images/banner1.jpg" width="100%" height="330px" alt="Banner LoL">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/images/Banner LQM.png" width="100%" height="330px" alt="Banner Liên quân Mobile">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/images/banner LoL2.jpg" width="100%" height="330px" alt="Banner Tốc chiến">
+                </div>
+            </div>
+            <div class="text-center text-white">
+                <h2 class="display-4 fw-bolder" style="color:coral">Account game gủng các thứ</h2>
+                <p class="lead fw-normal">Bơi vào đây nào Homie <i class="bi bi-emoji-smile-upside-down"></i></p>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+    </header>
+    <!-- Section-->
+    <!-- Page Content-->
+    <section class="pt-4">
+        <div class="container px-lg-5">
+            <!-- Page Features-->
+
+
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                @foreach (var item in Model)
+                {
+                    <div class="col mb-5">
+
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <div class="badge bg-danger text-black position-absolute" style="top: 0.5rem; right: 0.5rem">#@item.id</div>
+
+                            <img class="card-img-top" src="@item.hinh" width="100%" height="150px" alt="..." />
+
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <div class="panel" style="background-color: darkgrey">
+                                        <h5 class="fw-bolder">@item.LoaiGame.tengame</h5>
+                                    </div>
+                                </div>
+                                <div class="text-left">
+                                    <strong>
+                                        Rank : @item.rank
+                                        <p> </p>
+                                    </strong>
+                                    <strong>
+                                        Tướng : @item.tuong
+                                        <p> </p>
+                                    </strong><strong>
+                                        Trang phục : @item.trangphuc
+                                        <p> </p>
+                                    </strong>
+
+                                    <strong>
+                                        Giá:
+                                        <span class="text-muted text-decoration-line-through">@String.Format("{0:0,0đ}", item.giaban.Value + 30000)</span>
+                                        <label><i class="bi bi-arrow-right"></i></label>
+                                        @String.Format("{0:0,0đ}", item.giaban.Value)
+                                    </strong>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-info mt-auto" style="width: 220px" href="@Url.Action("Detail", "Account", new { @id = item.id, @strURL = Request.Url.ToString() })"><strong>Vô coi chơi nè...&nbsp;</strong><i class="bi bi-emoji-heart-eyes-fill"></i></a></div>
+                            </div>
+                            @if (User != null)
+                            {
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-danger mt-auto" style="width: 220px" href="@Url.Action("Themgiohang", "Cart", new { @id = item.id, @strURL = Request.Url.ToString() })"><i class="bi bi-cart-plus"></i> <strong>&nbsp;Thêm vào giỏ hàng</strong></a></div>
+                                </div>
+                            }
+                            else
+                            {
+
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-danger mt-auto" style="width: 220px" href="@Url.Action("DangNhap", "User", new { @id = item.id, @strURL = Request.Url.ToString() })"><i class="bi bi-cart-plus"></i> <strong>&nbsp;Thêm vào giỏ hàng</strong></a></div>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) /
+    @Model.PageCount
+    <div class="MenuTrang">
+        @Html.PagedListPager(Model, page => Url.Action("HomePage", new { page = page }))
+    </div>
+    <style>
+        .MenuTrang li {
+            display: inline;
+        }
+    </style>
+    <style type="text/css">
+        #mau-nut a {
+            clear: both;
+            background-color: orange;
+            color: snow;
+        }
+
+            #mau-nut a:hover {
+                background-color: darkcyan;
+                color: snow;
+            }
+    </style>
+
+    <!-- Footer-->
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3 style="color:coral">&ensp;&emsp;<i class="bi bi-person-circle"></i> Morphine Deadline</h3>
+                        <ul>
+                            <li><h6 style="font-size:small">&emsp;&emsp;Nguyễn Bùi Hoàng Phước</hr></li>
+                            <li><h6 style="font-size:small">&emsp;&emsp;Trần Thanh Phước</hr></li>
+                            <li><h6 style="font-size:small">&emsp;&emsp;Lê Trọng Phước</hr></li>
+                            <li><h6 style="font-size:small">&emsp;&emsp;Trần Hữu Quang</hr></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3 style="color:coral">Liên Hệ:</h3>
+                        <ul>
+                            <li><h6 style="font-size:smaller"><i class="bi bi-envelope-fill"></i>&ensp; shopaccvng@gmail.com</hr></li>
+                            <li><h6 style="font-size:smaller"><i class="bi bi-telephone-fill"></i>&ensp; 0788-988-797</hr></li>
+                            <li style="font-size:large; color:deepskyblue">
+                                &emsp;&emsp;<a href="https://www.facebook.com/profile.php?id=100005414179219"><i class="icon ion-social-facebook"></i> </a>&ensp;<a href="#"><i class="icon ion-social-twitter"></i></a>&ensp;<a href="#"> </a><a href="#"><i class="icon ion-social-instagram"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 item">
+                        <div class="col-md-6 item text">
+                            <h3 style="color:coral">HUTECH - Khoa CNTT</h3>
+                            <p>Đồ án môn: Lập Trình Web</p>
+                            <p>Giảng viên hướng dẫn: Trịnh Công Nhựt</p>
+                            <p>Nhóm thực hiện: Nhóm 11</p>
+                        </div>
+
+                    </div>
+                    @*<p class="copyright">Company Name © 2018</p>*@
+                </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

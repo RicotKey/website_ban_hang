@@ -1,0 +1,77 @@
+﻿@model ShopAcc.Models.User
+
+@{
+    ViewBag.Title = "DeleteUser";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Xóa Người Dùng</h2>
+
+<h3>Bạn có chắc muốn xóa người dùng này?</h3>
+<div>
+    <h4>Người dùng</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span class="display-label">Tên đăng nhập: </span>
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.tendn)
+        </dd>
+
+        <dt>
+            <span class="display-label">Mật khẩu: </span>
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.matkhau)
+        </dd>
+
+        <dt>
+            <span class="display-label">Email: </span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            <span class="display-label">Số điện thoại: </span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sdt)
+        </dd>
+        <dt>
+            <span class="display-label">Tên hiển thị: </span>
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.tenhienthi)
+        </dd>
+
+        <dt>
+            <span class="display-label">Avarta: </span>
+        </dt>
+
+
+        <dd>
+            <img src="@Model.anhdaidien" height="250" width="150" />
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-google" /> |
+        </div>
+    }
+</div>
+<div class="text-center">
+    <a class="btn btn-default btn btn-google" href="@Url.Action("TTUser")">Trở Về</a>
+</div>

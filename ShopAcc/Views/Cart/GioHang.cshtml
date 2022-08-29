@@ -1,0 +1,135 @@
+﻿@model IEnumerable<ShopAcc.Models.GioHang>
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Cart</title>
+</head>
+<body>
+
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">GIỎ HÀNG CỦA BẠN</h1>
+        </div>
+    </section>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col"> </th>
+                                <th scope="col">Loại game</th>
+                                <th scope="col">Tình trạng</th>
+                                <th scope="col" style="text-align:right">Loại Acc</th>
+                                <th scope="col" class="text-right">Giá</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td><img src="@item.hinh" width="50px"> </td>
+                                    <td>@item.idGame</td>
+                                    @if (item.trangthai == true)
+                                    {
+                                        <td>Còn Hàng</td>
+                                    }
+                                    else
+                                    {
+                                        <td>Đã bán</td>
+                                    }
+                                    <td class="text-right">@item.idLoai</td>
+
+                                    <td class="text-right">@item.giaban</td>
+
+                                    @*<td>
+                                            <a href="@Url.Action("XoaAcc", new { id = item.idacc })">
+                                                <button class="btn btn-danger flex-shrink-0" type="button">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </a>
+                                        </td>*@
+                                    <td class="text-right"><a href="@Url.Action("XoaAcc", new { id = item.idacc })"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </a></td>
+                                </tr>
+                            }
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Tổng tiền</td>
+                                <td class="text-right">@ViewBag.Tongtien VND</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Số lượng</td>
+                                <td class="text-right">@ViewBag.Tongsoluong</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Giảm giá</td>
+                                <td class="text-right">0 VND</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Thành tiền</strong></td>
+                                <td class="text-right"><strong>@ViewBag.Tongtien VND</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="row text-right" >
+                    <a href="@Url.Action("XoaAll")">
+                        <button class="btn btn-danger flex-shrink-0" type="button">
+                            <i class="bi bi-cart-x-fill" style="font-size: 15px"></i>
+                            <strong style="font-size:14px">Xóa Giỏ hàng</strong>
+                        </button>
+                    </a>
+                    <a href="@Url.Action("HomePage","Account")" style="text-decoration: none"
+                    <div class="col-sm-12  col-md-6">
+                        <button class="btn btn-block btn-dark" text-decoration: none>Tiếp tục mua Acc</button>
+                    </div></a>
+
+                    <a href="@Url.Action("DatHang","Cart")" style="text-decoration: none"
+                    <div class="col-sm-12 col-md-6 text-right">
+                        <button class="btn btn-lg btn-block btn-success text-uppercase" text-decoration: none>Thanh toán</button>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

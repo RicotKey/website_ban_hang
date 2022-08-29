@@ -1,0 +1,141 @@
+﻿@model ShopAcc.Models.Account
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Tạo Account Mới</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Nhập thông tin Account:</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <strong class="control-label col-md-2">Tên tựa game</strong>
+        <div class="col-md-10">
+            @Html.DropDownList("idGame", (IEnumerable<SelectListItem>)ViewBag.idGame, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.idGame, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <strong class="control-label col-md-2">Tên tài khoản</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.taikhoan, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.taikhoan, "", new { @class = "text-danger" })
+            @ViewData["Error2"]
+        </div>
+    </div>
+
+    <div class="form-group">
+        <strong class="control-label col-md-2">Mật khẩu</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.matkhau, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.matkhau, "", new { @class = "text-danger" })
+            @ViewData["Error3"]
+        </div>
+    </div>
+    <div class="form-group">
+        <strong class="control-label col-md-2">Giá bán</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.giaban, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.giaban, "", new { @class = "text-danger" })
+            @ViewData["Error4"]
+        </div>
+    </div>
+
+    <div class="form-group">
+        <strong class="control-label col-md-2">Rank</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.rank, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.rank, "", new { @class = "text-danger" })
+            @ViewData["Error5"]
+        </div>
+    </div>
+
+    <div class="form-group">
+        <strong class="control-label col-md-2">Số lượng tướng</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.tuong, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.tuong, "", new { @class = "text-danger" })
+            @ViewData["Error7"]
+        </div>
+    </div>
+
+    <div class="form-group">
+        <strong class="control-label col-md-2">Trang phục</strong>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.trangphuc, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.trangphuc, "", new { @class = "text-danger" })
+            @ViewData["Error6"]
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <strong>Hình</strong>
+            @Html.EditorFor(model => model.hinh, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.hinh, "", new { @class = "text-danger" })
+            <input type="file" name="fileUpload" id="fileUpload" accept="image/*"
+                   style="display:none;" />
+            <input type="button" id="btnUpload" value="Chọn" class="btn btn-success" />
+            <img src="@Model.hinh" height="250" width="150" id="pictureUpload" />
+        </div>
+    </div>
+    @section upload
+ {
+        <script>
+            $(function () {
+                $('#btnUpload').click(function () {
+                    $('#fileUpload').trigger('click');
+                });
+            });
+            $('#fileUpload').change(function () {
+                if (window.FormData !== undefined) {
+                    var fileUpload = $('#fileUpload').get(0);
+                    var files = fileUpload.files;
+                    var formData = new FormData();
+                    formData.append('file', files[0]);
+                    $.ajax(
+                        {
+                            type: 'POST',
+                            url: '/Admin/ProcessUpload',
+                            contentType: false,
+                            processData: false,
+                            data: formData,
+                            success: function (urlImage) {
+                                $('#pictureUpload').attr('src', urlImage);
+                                $('#hinh').val(urlImage);
+
+                            },
+                            error: function (err) {
+                                alert('Error ', err.statusText);
+                            }
+                        });
+                }
+            });
+        </script>
+    }
+    <div class="form-group">
+        <strong class="control-label col-md-2">Loại Acc</strong>
+        <div class="col-md-10">
+            @Html.DropDownList("idLoai", (IEnumerable<SelectListItem>)ViewBag.idLoai, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.idLoai, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Tạo" class="btn btn-default btn btn-info" />
+        </div>
+    </div>
+</div>
+}
+
+<div class="text-center">
+    <a class="btn btn-default btn btn-google" href="@Url.Action("Index1")">Trở Về</a>
+</div>
